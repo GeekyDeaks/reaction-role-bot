@@ -1,0 +1,26 @@
+#
+
+discord:
+  token: 
+  guild:
+
+reactions:
+  - channel: role_assignment
+    message: 
+      id: 
+      content: |
+        Please select a platform
+    roles:
+      - emoji: playstation
+        role: Playstation
+      - emoji: xbox
+        role: Xbox
+
+  - name: games
+    message: |
+
+  platform: 
+    msg: #1231241
+    reactions:
+      - emjoi: playstation
+        role: Playstation

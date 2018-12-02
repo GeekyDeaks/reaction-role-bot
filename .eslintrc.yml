@@ -1,0 +1,80 @@
+env:
+  es6: true
+  node: true
+  browser: true
+extends: 'eslint:recommended'
+parserOptions:
+  ecmaVersion: 2017
+  sourceType: 'script'
+rules:
+  indent:
+    - error
+    - 4
+  linebreak-style:
+    - error
+    - unix
+  quotes:
+    - error
+    - single
+  semi:
+    - error
+    - never
+  strict:
+    - error
+    - global
+  require-await:
+    - warn
+  no-return-await:
+    - warn
+  no-await-in-loop:
+    - warn
+  eqeqeq:
+    - warn
+  no-eq-null:
+    - warn
+  no-eval:
+    - error
+  no-extra-bind:
+    - warn
+  no-implied-eval:
+    - error
+  complexity:
+    - warn
+    - max: 15
+  no-implicit-coercion:
+    - warn
+  no-implicit-globals:
+    - warn
+  no-invalid-this:
+    - warn
+  no-lone-blocks:
+    - warn
+  no-loop-func:
+    - warn
+  no-magic-numbers:
+    - warn
+    - ignore: [0, 1]
+      enforceConst: true
+  no-return-assign:
+    - warn
+  no-self-compare:
+    - warn
+  no-unused-expressions:
+    - warn
+  no-useless-concat:
+    - warn
+  no-useless-return:
+    - warn
+  no-with:
+    - error
+  yoda:
+    - warn
+  prefer-destructuring:
+    - error
+    - VariableDeclarator:
+        array: false
+        object: true
+      AssignmentExpression:
+        array: false
+        object: false
+
